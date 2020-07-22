@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Título da página</title>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="centerTitle" id="app"></div>
+
+    <div class="centerRanges">
+        <form class="range_color">
+            <p>
+                <label for="vol">Color red (between 0 and 255):
+                    <input id="rangeRed" type="range" min="0", max="255" value ="0" onchange="teste()">
+                    <input id="disabledRed" type="text" disabled="" readonly placeholder="0">
+                </label>
+            </p>
+            
+            <p>
+                <label for="vol">Color green (between 0 and 255):
+                    <input id="rangeGreen" type="range" min="0" max="255" value ="0" onchange="teste()">
+                    <input id="disabledGreen" type="text" disabled="" readonly placeholder="0">
+                </label>
+            </p>
+            
+            <p>
+                <label for="vol">Color blue (between 0 and 255):
+                    <input id="rangeBlue" type="range" min="0" max="255" value ="0" onchange="teste()">
+                    <input id="disabledBlue" type="text" disabled="" readonly placeholder="0">
+                </label>
+
+            </p>   
+        </form>
+    </div>
+
+    <div id="container" class="container">
+        <div class="testeRGB">
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+  
+</html>
